@@ -6,7 +6,7 @@
 ._*
 
 # Custom folder icons
-Icon
+Icon
 
 # Volume root files
 .DocumentRevisions-V100
@@ -541,3 +541,9 @@ playground.xcworkspace
 
 # Swift Package Manager
 # Package.resolved
+
+# Flutter Android debug/profile manifests (not Visual Studio Debug/ folders)
+!**/android/app/src/debug/
+!**/android/app/src/debug/**
+!**/android/app/src/profile/
+!**/android/app/src/profile/**

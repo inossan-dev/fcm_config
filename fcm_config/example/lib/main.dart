@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:fcm_config/fcm_config.dart';
+import 'package:fcm_config_new/fcm_config_new.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';

@@ -29,7 +29,7 @@ dependencies:
      
   http: '>=1.2.2 <3.0.0'
   shared_preferences: '>=2.2.3'
-  fcm_config:
+  fcm_config_new:
     path: ../
 
 

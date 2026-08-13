@@ -80,8 +80,6 @@ extension MapExt on RemoteMessage {
         return 1;
       case AndroidNotificationPriority.maximumPriority:
         return 2;
-      default:
-        return 0;
     }
   }
 
@@ -111,8 +109,6 @@ extension MapExt on RemoteMessage {
         return 0;
       case AndroidNotificationVisibility.public:
         return 1;
-      default:
-        return 0;
     }
   }
 }

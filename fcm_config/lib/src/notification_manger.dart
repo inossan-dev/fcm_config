@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:fcm_config/src/io_notifications_handler.dart';
+import 'package:fcm_config_new/src/io_notifications_handler.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 

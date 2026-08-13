@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 
-import 'fcm_config.dart';
+import 'fcm_config_new.dart';
 
 /// This mixin can listen to notification tap
 mixin FCMNotificationClickMixin<T extends StatefulWidget> on State<T> {

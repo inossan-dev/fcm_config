@@ -11,7 +11,7 @@
 ```yaml
 fcm_config:
   git: 
-    url: https://github.com/Shreemanarjun/fcm_config.git    
+    url: https://github.com/inossan-dev/fcm_config.git    
     path: fcm_config         
 ```
 
