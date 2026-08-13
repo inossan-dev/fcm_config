@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart'
+    hide WebNotificationDetails;
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
@@ -51,7 +52,7 @@ class PlatformNotificationHandler implements LocaleNotificationInterface {
       linux: linuxInitializationSettings,
     );
     await _localeNotification.initialize(
-      initializationSettings,
+      settings: initializationSettings,
       onDidReceiveNotificationResponse: _onPayLoad,
       onDidReceiveBackgroundNotificationResponse:
           manager.onDidReceiveBackgroundNotificationResponse,
@@ -371,12 +372,12 @@ class PlatformNotificationHandler implements LocaleNotificationInterface {
       id = now.hour + now.minute + now.second + now.millisecond;
     }
     await _localeNotification.show(
-      id,
-      message.notification!.title,
-      (Platform.isAndroid && bigPictureStyleInformation == null)
+      id: id,
+      title: message.notification!.title,
+      body: (Platform.isAndroid && bigPictureStyleInformation == null)
           ? ''
           : message.notification!.body,
-      details,
+      notificationDetails: details,
       payload: jsonEncode(message.toMap()),
     );
   }
@@ -421,10 +422,10 @@ class PlatformNotificationHandler implements LocaleNotificationInterface {
           body: body,
         ));
     await _localeNotification.show(
-      nId,
-      title,
-      body,
-      details,
+      id: nId,
+      title: title,
+      body: body,
+      notificationDetails: details,
       payload: jsonEncode(notify.toMap()),
     );
   }
