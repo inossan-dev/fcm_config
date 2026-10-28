@@ -1,3 +1,8 @@
+## [1.0.0] - 13/08/2026
+
+* Update dependencies
+
+
 ## [1.0.1] - 13/08/2026
 
 * Fix `WebNotificationDetails` export conflict with `flutter_local_notifications` 22+
